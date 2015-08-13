@@ -4,7 +4,7 @@
 
         // set url 
         $text = (isset($_GET["text"]) ? $_GET["text"] : "halo");
-        curl_setopt($ch, CURLOPT_URL, "http://sandbox.api.simsimi.com/request.p?key=4628c1ee-2e89-42c0-adf1-9701f7f69fef&lc=id&ft=0.5&text=" . urlencode($text)); 
+        curl_setopt($ch, CURLOPT_URL, "http://sandbox.api.simsimi.com/request.p?key=API_KEY&lc=id&ft=0.5&text=" . urlencode($text)); 
 
         //return the transfer as a string 
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
